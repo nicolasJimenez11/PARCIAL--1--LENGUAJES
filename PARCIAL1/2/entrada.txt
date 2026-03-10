@@ -1,0 +1,10 @@
+variable
+x1
+dato123
+Hola9
+miVariable2024
+1variable
+_dato
+abc$
+9
+variable!
