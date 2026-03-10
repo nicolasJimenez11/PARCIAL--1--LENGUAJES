@@ -17,6 +17,12 @@ El programa revisa que las piezas utilizadas pertenezcan al conjunto válido de 
 
 Las jugadas a evaluar se leen desde un archivo de texto, lo cual permite probar fácilmente múltiples ejemplos de entrada.
 
+**RESULTADOS**
+
+Se realizaron pruebas con diferentes cadenas que representan movimientos de ajedrez. El programa logró aceptar correctamente los movimientos válidos como p->k4 o pxe5 y rechazar cadenas que no cumplían con el formato definido.
+
+![Ejecucion punto 1](IMAG/1.png)
+
 COMO EJECUTARLO
 
 Ejecutar punto 1
@@ -37,6 +43,12 @@ El programa analiza cada cadena de entrada y verifica estas condiciones carácte
 
 Las cadenas de prueba se leen desde un archivo de texto, permitiendo verificar varios ejemplos válidos e inválidos.
 
+**RESULTADOS**
+
+Se probaron diferentes cadenas para verificar si cumplían con las reglas de un identificador. El programa aceptó correctamente identificadores válidos como variable o dato123, y rechazó entradas inválidas como 1variable o abc$.
+
+![Pruebas punto 2](IMAG/2.jpeg)
+
 COMO EJECUTARLO
 
 ```bash
@@ -49,10 +61,15 @@ Análisis
 En este punto se desarrolló una calculadora simple utilizando las herramientas Flex y Bison. Flex se encarga de realizar el análisis léxico identificando tokens como números, operadores y la función sqrt. Por su parte Bison se encarga de analizar la estructura de las expresiones y realizar las operaciones correspondientes.
 
 Para el cálculo de la raíz cuadrada se implementó el método numérico de Newton-Raphson, el cual permite aproximar la raíz cuadrada de un número mediante iteraciones sucesivas. Este método se basa en la fórmula:
-
-
+![Formula Newton-Raphson](IMAG/3FOR.png)
 
 El programa recibe expresiones desde un archivo de texto y muestra los resultados de cada operación en la consola.
+
+**RESULTADOS**
+
+Se probaron distintas expresiones matemáticas desde un archivo de entrada. El programa ejecutó correctamente operaciones básicas y el cálculo de raíz cuadrada utilizando el método de Newton-Raphson.
+
+![Salida programa](IMAG/3.png)
 
 COMO EJECUTARLO
 
@@ -76,6 +93,19 @@ En este punto se realizó una comparación entre un lenguaje compilado y uno int
 El objetivo fue observar la diferencia en el tiempo de ejecución entre ambos lenguajes. El programa en C debe ser compilado antes de ejecutarse, mientras que el programa en Python se ejecuta directamente mediante el intérprete.
 
 Al ejecutar ambos programas se puede observar que el lenguaje compilado suele presentar tiempos de ejecución menores, lo que demuestra una de las ventajas de los lenguajes compilados en términos de rendimiento.
+
+**RESULTADOS**
+
+Se ejecutó el algoritmo de Fibonacci en C y en Python. Los resultados mostraron que el programa compilado en C se ejecuta más rápido que el programa interpretado en Python.
+
+
+EJECUCION C
+
+![Ejecucion en C](IMAG/4C.png)
+
+EJECUCION PY
+
+![Ejecucion en Python](IMAG/4py.png)
 
 COMO EJECUTARLO
 
@@ -105,6 +135,12 @@ Una vez validada la entrada, el programa en Python genera la secuencia de Fibona
 
 Este ejercicio permite observar el uso de ANTLR para definir gramáticas y procesar expresiones de entrada.
 
+**RESULTADOS**
+
+El programa reconoció correctamente expresiones como FIBO(n) y generó la secuencia de Fibonacci correspondiente, mostrando los resultados en consola.
+
+![Ejecucion Fibonacci ANTLR](IMAG/5.png)
+
 COMO EJECUTARLO
 
 Generar los archivos de ANTLR:
@@ -120,3 +156,12 @@ python3 main.py
 Luego ingresar una expresión como:
 
 FIBO(7)
+
+
+**CONCLUSION**
+
+En este parcial se aplicaron diferentes conceptos relacionados con lenguajes de programación y herramientas de análisis de código. A través de los ejercicios se pudo trabajar con validación de cadenas, reconocimiento de patrones, construcción de analizadores con Flex y Bison, y definición de gramáticas utilizando ANTLR.
+
+Los resultados obtenidos muestran que cada uno de los programas desarrollados cumple con la funcionalidad solicitada, permitiendo procesar correctamente las entradas y generar los resultados esperados. Además, el ejercicio de comparación entre lenguajes compilados e interpretados permitió observar diferencias importantes en el rendimiento.
+
+En general, el desarrollo de este trabajo permitió reforzar la comprensión práctica de los temas vistos en clase y el uso de herramientas utilizadas en el diseño y construcción de lenguajes y compiladores.
